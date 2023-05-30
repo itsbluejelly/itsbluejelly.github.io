@@ -3,3 +3,34 @@
 @tailwind components;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@layer base{
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    header{
+        margin-top:2px solid gold
+    }
+
+    footer{
+        margin-top:2px solid whitesmoke
+    }
+}
+
+@layer utilities{
+    .dark-background{
+        background-image: radial-gradient(grey, whitesmoke);
+        background-image: url('/build/img/6150433.jpg');
+        background-size: cover;
+        background-repeat: repeat;
+        color: white;
+    }
+
+    .light-background{
+        background-image: radial-gradient(skyblue, white);
+        background-image: url('/build/img/v856-kul-05.jpg');
+        background-size: cover;
+        color: black
+    }
+}
