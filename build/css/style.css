@@ -521,3 +521,9 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+@media (min-width: 640px) {
+  .sm\:scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
