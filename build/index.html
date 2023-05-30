@@ -9,13 +9,14 @@
         <meta name="description" content="This is my portfolio home page">
         <link rel="icon" href="./img/professional-portfolio.png" type="image/x-icon">
         <link rel="stylesheet" href="./css/style.css">
+        <script src="../js/main.js"></script>
         <title>Portfolio Home Page</title>
     </head>
 
     <body class="min-h-screen light-background dark:dark-background flex flex-col lg:flex-row">
         <header class="sticky top-0 lg:left-0 z-10 bg-teal-700 dark:bg-[#2D2924]">
             <section class="flex justify-evenly mx-auto max-w-4xl items-center p-4 lg:hidden">
-                <h1 class="text-3xl font-medium italic"><a href="#" class="hover:text-white focus-visible:text-white active:opacity-5">My Portfolio</a></h1>
+                <h1 class="text-3xl font-medium italic"><a href="#" class="hover:text-white focus-visible:text-white dark:hover:text-black dark:focus-visible:text-black active:opacity-5 ">My Portfolio</a></h1>
 
                 <div id="hamburger-button">
                     <button class="cursor-pointer text-3xl relative h-8 w-8 md:hidden">
@@ -24,24 +25,23 @@
                 </div>
 
                 <nav aria-label="main" class="hidden justify-evenly text-xl space-x-8 md:block">
-                    <a href="#about" class="hover:text-white focus-within:text-white active:opacity-5">About Me</a>
-                    <a href="#contact" class="hover:text-white focus-within:text-white active:opacity-5">Contact Me</a>
-                    <a href="#portfolio" class="hover:text-white focus-within:text-white active:opacity-5">My portfolio</a>
+                    <a href="#about" class="hover:text-white focus-within:text-white dark:hover:text-black dark:focus-within:text-black active:opacity-5">About Me</a>
+                    <a href="#contact" class="hover:text-white focus-within:text-white dark:hover:text-black dark:focus-within:text-black active:opacity-5">Contact Me</a>
+                    <a href="#portfolio" class="hover:text-white focus-within:text-white dark:hover:text-black dark:focus-within:text-black active:opacity-5">My portfolio</a>
                 </nav>
             </section>
 
-            <section id="mobile_menu" class="origin-top absolute top-68 w-full animated-menu md:hidden">
-                <nav aria-label="mobile" class="flex flex-col items-center min-h-screen py-8 bg-black bg-opacity-50 text-5xl z-10">
-                    <a href="#about" class="hover:text-white focus-within:text-white active:opacity-5 w-full py-6 text-center">Home</a>
-                    <a href="#about" class="hover:text-white focus-within:text-white active:opacity-5 w-full py-6 text-center">About</a>
-                    <a href="#contact" class="hover:text-white focus-within:text-white active:opacity-5 w-full py-6 text-center">Contact</a>
-                    <a href="#portfolio" class="hover:text-white focus-within:text-white active:opacity-5 w-full py-6 text-center">Portfolio</a>  
-                    <a href="#portfolio" class="hover:text-white focus-within:text-white active:opacity-5 w-full py-6 text-center">Social</a>  
+            <section id="mobile-menu" class="hidden origin-top absolute w-full min-h-screen animate-open-menu">
+                <nav aria-label="mobile" class="flex flex-col items-center min-h-screen py-8 bg-black bg-opacity-50 text-5xl z-10 dark:bg-white dark:bg-opacity-50 text-white dark:text-black">
+                    <a href="#about" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Home</a>
+                    <a href="#about" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">About</a>
+                    <a href="#contact" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Contact</a>
+                    <a href="#portfolio" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Portfolio</a>  
+                    <a href="#portfolio" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Social</a>  
                 </nav>
             </section>
 
             <section id="large-screen-menu" class="hidden lg:flex flex-col max-w-full mx-auto justify-evenly items-center">
-
                 <nav aria-label="large menu" class="flex flex-col py-8 z-10">
                     <a href="#" class="py-3 mx-auto block"><img src="./img/icons8-country-house-50.png" alt="Home" title="Home" width="50" height="50" class="block"></a>
 
