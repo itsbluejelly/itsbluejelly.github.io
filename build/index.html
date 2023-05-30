@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" class="sm:scroll-smooth">
+<html lang="en" class="scroll-smooth">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
         <meta name="description" content="This is my portfolio home page">
         <link rel="icon" href="./img/professional-portfolio.png" type="image/x-icon">
         <link rel="stylesheet" href="./css/style.css">
-        <script src="../js/main.js" defer></script>
+        <script src="../js/main.js" defer type="text/javascript"></script>
         <title>Portfolio Home Page</title>
     </head>
 
@@ -20,32 +20,30 @@
 
                 <div id="hamburger-button">
                     <button class="cursor-pointer text-3xl relative h-8 w-8 md:hidden">
-                        <div class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
-
-                        </div>
-                    </button>
-
-                    <nav aria-label="main" class="hidden justify-evenly text-xl space-x-8 md:block">
-                        <a href="#about" class="hover:text-white focus-within:text-white dark:hover:text-black dark:focus-within:text-black active:opacity-5">About Me</a>
-                        <a href="#contact" class="hover:text-white focus-within:text-white dark:hover:text-black dark:focus-within:text-black active:opacity-5">Contact Me</a>
-                        <a href="#portfolio" class="hover:text-white focus-within:text-white dark:hover:text-black dark:focus-within:text-black active:opacity-5">My portfolio</a>
-                    </nav>
+                        <div class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-1000 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-1000 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-1000 after:content-['']"></div>
+                        </button>
                 </div>
+
+                <nav aria-label="main" class="hidden justify-evenly text-xl space-x-8 md:block">
+                    <a href="#about" class="hover:text-white focus-within:text-white dark:hover:text-black dark:focus-within:text-black active:opacity-5">About Me</a>
+                    <a href="#contact" class="hover:text-white focus-within:text-white dark:hover:text-black dark:focus-within:text-black active:opacity-5">Contact Me</a>
+                    <a href="#portfolio" class="hover:text-white focus-within:text-white dark:hover:text-black dark:focus-within:text-black active:opacity-5">My portfolio</a>
+                </nav>
             </section>
 
             <section id="mobile-menu" class="hidden origin-top absolute w-full min-h-screen animate-open-menu">
                 <nav aria-label="mobile" class="flex flex-col items-center min-h-screen py-8 bg-black bg-opacity-50 text-5xl z-10 dark:bg-white dark:bg-opacity-50 text-white dark:text-black">
-                    <a href="#about" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Home</a>
+                    <a href="#hero" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Home</a>
                     <a href="#about" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">About</a>
                     <a href="#contact" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Contact</a>
                     <a href="#portfolio" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Portfolio</a>  
-                    <a href="#portfolio" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Social</a>  
+                    <a href="#footer" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Social</a>  
                 </nav>
             </section>
 
-            <section id="large-screen-menu" class="hidden lg:flex flex-col max-w-full mx-auto justify-evenly items-center">
+            <section id="large-screen-menu" class="hidden lg:flex flex-col max-w-full max-h-[100vh] sticky left-0 place-content-between">
                 <nav aria-label="large menu" class="flex flex-col py-8 z-10">
-                    <a href="#" class="py-3 mx-auto block"><img src="./img/icons8-country-house-50.png" alt="Home" title="Home" width="50" height="50" class="block"></a>
+                    <a href="#hero" class="py-3 mx-auto block"><img src="./img/icons8-country-house-50.png" alt="Home" title="Home" width="50" height="50" class="block"></a>
 
                     <a href="#about" class="py-3 mx-auto block"><img src="./img/arrow-up.png" alt="About" title="About" width="512" height="512" class="w-[48px] h-auto"></a>
 
@@ -64,11 +62,142 @@
             </section>
         </header>
 
-        <main class="grow max-w-4xl mx-auto">
-            <section id="hero"></section>
-        </main>
+        <main class="mx-auto max-w-4xl">
+            <section id="hero"
+              class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col items-center justify-center gap-8 p-6 md:flex-row">
+              <article class="sm:w-1/2">
+                <h2 class="max-w-md text-center text-4xl font-bold md:text-left md:text-5xl">
+                  Welcome To....
+                  <span class="text-yellow-600 dark:text-cyan-600 whitespace-wrap">Ronnie Denzel's </span>Portfolio...
+                </h2>
 
-        <footer class="sticky bottom-0 bg-teal-700 dark:bg-[#2D2924] flex flex-col lg:hidden">
+                <p class="mt-4 max-w-md text-center text-2xl md:text-left">
+                  I Hope This Page Helps You Understand More About Me.
+                </p>
+              </article>
+
+              <section class="flex flex-col gap-2">
+                <img src="./img/IMG-20230521-WA0004.jpg" alt="The DirectEd BootCamp" title="Me at the bootcamp photoshoot" loading="lazy" width="1600" height="1600" class="bg-slate-400 border p-4 rounded-2xl dark:bg-black">
+                <img src="./img/IMG-20230521-WA0011.jpg" alt="The DirectEd BootCamp" title="Other participants" loading="lazy" width="1500" height="1000" class="bg-slate-400 border p-4 rounded-full dark:bg-black">
+              </section>
+            </section>
+        
+            <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+        
+            <section id="about" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
+              <h2 class="mb-6 text-center text-4xl font-bold md:text-5xl italic">
+                My Portfolio
+              </h2>
+              <ul class="mx-auto my-12 flex list-none flex-col items-center gap-8 md:flex-row">
+                <li
+                  class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+                  <img src="./img/rocketman.png" alt="Html" title="my Html Project" class="mb-6 w-1/2">
+                  <h3 class="text-center text-3xl">
+                    Html Project
+                  </h3>
+                  <p class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 md:block">
+                    The tacos project 1.0
+                  </p>
+                </li>
+                <li
+                  class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+                  <img src="./img/rocketman.png" alt="Html" title="my Html Project" class="mb-6 w-1/2">
+                  <h3 class="text-center text-3xl">
+                    CSS Project
+                  </h3>
+                  <p class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 md:block">
+                    The tacos project 2.0
+                  </p>
+                </li>
+                <li
+                  class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+                  <img src="./img/rocketman.png" alt="Html" title="my Html Project" class="mb-6 w-1/2">
+                  <h3 class="text-center text-3xl">
+                    Tailwind Project
+                  </h3>
+                  <p class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 md:block">
+                    The Acme Rockets 1.0
+                  </p>
+                </li>
+                
+              </ul>
+            </section>
+        
+            <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+        
+            <section id="testimonials"
+              class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
+              <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
+                Testimonials
+              </h2>
+              <figure class="my-12">
+                <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
+                  <p
+                    class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
+                    Acme has always been there for me. Their Explorer rocket arrived
+                    in a wooden crate as expected. Life-long customer! A++ shopping
+                    experience.
+                  </p>
+                </blockquote>
+                <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
+                  &#8212;Wile E. Coyote, Genius
+                </figcaption>
+              </figure>
+              <figure class="my-12">
+                <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
+                  <p
+                    class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
+                    The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
+                    Space Modulator on several occassions.
+                    <span class="italic">This makes me very, very angry!</span>
+                    Nevertheless, K-9 and I have awarded Acme the Martian contract for
+                    space exploration rockets based on Acme's quality and sturdy
+                    designs.
+                  </p>
+                </blockquote>
+                <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
+                  &#8212;Marvin The Martian &amp; K-9
+                </figcaption>
+              </figure>
+              <figure class="my-12">
+                <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
+                  <p
+                    class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
+                    I knew I not only wanted &#8212;
+                    <span class="italic">I needed</span> &#8212; Acme's Infinity
+                    Rocket for my mission in space. Acme delivered in one day! Nothing
+                    says <q class="italic">Take me to your leader</q> like Acme's
+                    Infinity Rocket! 💯
+                  </p>
+                </blockquote>
+                <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
+                  &#8212;Buzz Lightyear
+                </figcaption>
+              </figure>
+            </section>
+        
+            <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+        
+            <section id="contact" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6">
+              <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
+                Contact Us
+              </h2>
+              <form action="" class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject"
+                  class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required
+                  class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"></textarea>
+                <button
+                  class="w-48 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none">
+                  Submit
+                </button>
+              </form>
+            </section>
+          </main>
+
+        <footer id='footer' class="sticky bottom-0 bg-teal-700 dark:bg-[#2D2924] flex flex-col lg:hidden">
             <nav class="flex justify-evenly text-xl space-x-8 items-center max-w-4xl mx-auto">
                 <a href="http://www.youtube.com" target="_blank"><img src="./img/vecteezy_youtube-logo-png-youtube-icon-transparent_18930572_34.png" alt="yotube-logo" title="youtube" loading="lazy"width="5000" height="5000" class="w-[100px] h-auto block"></a>
 

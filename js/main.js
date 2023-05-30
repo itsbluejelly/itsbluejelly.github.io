@@ -5,11 +5,12 @@ const initApp = () => {
     const toggleMenu = () => {
         mobileMenu.classList.toggle('hidden')
         mobileMenu.classList.toggle('block')
-        hamburgerBtn.classList.toggle('toggle-btn')
+        hamburgerBtn.className.toggle('toggle-btn')
     }
 
     hamburgerBtn.addEventListener('click', toggleMenu)
     mobileMenu.addEventListener('click', toggleMenu)
+
 }
 
 document.addEventListener('DOMContentLoaded', initApp)
