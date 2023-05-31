@@ -17,7 +17,7 @@ module.exports = {
       animation: {
         'open-menu': 'open-menu 0.3s ease-in-out forwards',
       }
+      }
     },
   plugins: [],
-}
 }

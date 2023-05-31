@@ -19,9 +19,9 @@
                 <h1 class="text-3xl font-medium italic"><a href="#" class="hover:text-white focus-visible:text-white dark:hover:text-black dark:focus-visible:text-black active:opacity-5 ">My Portfolio</a></h1>
 
                 <div id="hamburger-button">
-                    <button class="cursor-pointer text-3xl relative h-8 w-8 md:hidden">
-                        <div class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-1000 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-1000 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-1000 after:content-['']"></div>
-                        </button>
+                    <button class="cursor-pointer text-3xl relative h-8 w-8 md:hidden focus-within:toggle-btn" id="hamburger-button">
+                        <div class="toggle-btn absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-1000 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-1000 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-1000 after:content-['']"></div>
+                    </button>
                 </div>
 
                 <nav aria-label="main" class="hidden justify-evenly text-xl space-x-8 md:block">
@@ -41,7 +41,7 @@
                 </nav>
             </section>
 
-            <section id="large-screen-menu" class="hidden lg:flex flex-col max-w-full max-h-[100vh] sticky left-0 place-content-between">
+            <section id="large-screen-menu" class="hidden lg:flex flex-col max-w-full h-[100vh] sticky top-0 place-content-between">
                 <nav aria-label="large menu" class="flex flex-col py-8 z-10">
                     <a href="#hero" class="py-3 mx-auto block"><img src="./img/img logos/icons8-country-house-50.png" alt="Home" title="Home" width="50" height="50" class="block"></a>
 
@@ -89,13 +89,13 @@
               <h2 class="mb-6 text-center text-4xl font-bold md:text-5xl italic">
                 My Portfolio
               </h2>
-              <ul class="mx-auto my-12 flex list-none flex-col items-center gap-8 md:flex-row">
+              <ul class="mx-auto my-12 flex list-none flex-col  gap-8 md:flex-row items-center justify-center md:items-stretch">
                 <li class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-teal-500 py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
                     <img src="./img/img logos/HTML5.jpg" alt="Html" title="my Html Project" loading="lazy" width=2048 height="1536" class="w-1/2 rounded-3xl border shadow-md">
                     <a href="https://github.com/itsbluejelly/tacos-project" target="_blank" class="dark:hover:text-gray-600 hover:text-white focus-within:text-gray-600 dark:focus-within:white active:opacity-5 w-full py-6 text-center">
                         <h3 class="text-center text-3xl">HTML Project
                     </a>
-                  <p class="mt-2 hidden text-center text-3xl md:block">
+                  <p class="mt-2 hidden text-center text-3xl md:block dark:text-slate-400">
                     The tacos project 1.0
                   </p>
                 </li>
@@ -108,17 +108,17 @@
                         CSS Project
                       </h3>
                   </a>
-                  <p class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 md:block">
+                  <p class="mt-2 hidden text-center text-3xl dark:text-slate-400 md:block">
                     The tacos project 2.0
                   </p>
                 </li>
                 <li
                   class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-teal-500 py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
-                  <img src="./img/rocketman.png" alt="Html" title="my Html Project" class="mb-6 w-1/2">
+                  <img src="./img/img logos/Tailwind CSS.png" alt="Html" title="my Html Project" width="1700" height="1100" loading="lazy" class="mb-20 w-1/2 bg-white border rounded-3xl shadow-md block">
                   <h3 class="text-center text-3xl">
                     Tailwind Project
                   </h3>
-                  <p class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 md:block">
+                  <p class="hidden mt-20 text-center text-3xl dark:text-slate-400 md:block pb-40">
                     The Acme Rockets 1.0
                   </p>
                 </li>
@@ -128,55 +128,34 @@
         
             <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
         
-            <section id="testimonials"
-              class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
-              <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
-                Testimonials
+            <section id="about"
+              class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6 dark:bg-white rounded-3xl border shadow-2xl bg-black bg-opacity-10 dark:bg-opacity-30">
+              <h2 class="mb-6 text-center text-4xl font-bold dark:text-slate-900 md:text-5xl italic">
+                Who Am I
               </h2>
               <figure class="my-12">
                 <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
                   <p
                     class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
-                    Acme has always been there for me. Their Explorer rocket arrived
-                    in a wooden crate as expected. Life-long customer! A++ shopping
-                    experience.
+                    Hello There, I am a charismatic,energetic and hard-working lad hailing from a semi-urban town known as Kitengela with an ambition in software engineering.This portfolio is a project meant for the DirectEd Bootcamp but,despite me being new in this field, I believe that this is a small step towards me achieving my goals in the future.
                   </p>
-                </blockquote>
-                <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
-                  &#8212;Wile E. Coyote, Genius
-                </figcaption>
-              </figure>
-              <figure class="my-12">
-                <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
+
+                  <hr class="my-4 w-1/2 bg-black dark:bg-white mx-auto">
+                  
+                  <h3 class="mb-6 text-left text-4xl font-mono dark:text-slate-600 md:text-5xl underline-1">
+                    My Hobbies
+                  </h3>
+
                   <p
                     class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
-                    The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
-                    Space Modulator on several occassions.
-                    <span class="italic">This makes me very, very angry!</span>
-                    Nevertheless, K-9 and I have awarded Acme the Martian contract for
-                    space exploration rockets based on Acme's quality and sturdy
-                    designs.
+                    I love watching and reviewing movies, coding and playing video games, together with spending time with my family.
                   </p>
+
                 </blockquote>
                 <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
-                  &#8212;Marvin The Martian &amp; K-9
+                  &#8212;Ronnie Denzel
                 </figcaption>
-              </figure>
-              <figure class="my-12">
-                <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
-                  <p
-                    class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
-                    I knew I not only wanted &#8212;
-                    <span class="italic">I needed</span> &#8212; Acme's Infinity
-                    Rocket for my mission in space. Acme delivered in one day! Nothing
-                    says <q class="italic">Take me to your leader</q> like Acme's
-                    Infinity Rocket! 💯
-                  </p>
-                </blockquote>
-                <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
-                  &#8212;Buzz Lightyear
-                </figcaption>
-              </figure>
+              </figure>  
             </section>
         
             <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
