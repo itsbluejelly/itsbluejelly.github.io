@@ -16,16 +16,16 @@
     <body class="min-h-screen light-background dark:dark-background flex flex-col lg:flex-row">
         <header class="sticky top-0 lg:left-0 z-10 bg-teal-300 dark:bg-gray-400">
             <section class="flex justify-evenly mx-auto max-w-4xl items-center p-4 lg:hidden">
-                <h1 class="text-3xl font-medium italic"><a href="#" class="hover:text-white focus-visible:text-white dark:hover:text-black dark:focus-visible:text-black active:opacity-5 ">My Portfolio</a></h1>
+                <h1 class="text-3xl font-medium italic transition hover:scale-[1.2]"><a href="#" class="hover:text-white focus-visible:text-white dark:hover:text-black dark:focus-visible:text-black active:opacity-5">My Portfolio</a></h1>
 
                 <div id="hamburger-button">
-                    <button class="cursor-pointer text-3xl relative h-8 w-8 md:hidden focus-within:toggle-btn" id="hamburger-button">
-                        <div class="toggle-btn absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-1000 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-1000 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-1000 after:content-['']"></div>
+                    <button class="cursor-pointer text-3xl relative h-8 w-8 md:hidden transition hover:scale-[1.2] focus-within:toggle-btn" id="hamburger-button">
+                        <div class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-1000 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-1000 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-1000 after:content-['']"></div>
                     </button>
                 </div>
 
                 <nav aria-label="main" class="hidden justify-evenly text-xl space-x-8 md:block">
-                    <a href="#about" class="hover:text-white focus-within:text-white dark:hover:text-black dark:focus-within:text-black active:opacity-5">About Me</a>
+                    <a href="#about" class="transition hover:scale-[1.2] hover:text-white focus-within:text-white dark:hover:text-black dark:focus-within:text-black active:opacity-5">About Me</a>
                     <a href="#contact" class="hover:text-white focus-within:text-white dark:hover:text-black dark:focus-within:text-black active:opacity-5">Contact Me</a>
                     <a href="#portfolio" class="hover:text-white focus-within:text-white dark:hover:text-black dark:focus-within:text-black active:opacity-5">My portfolio</a>
                 </nav>
@@ -33,31 +33,31 @@
 
             <section id="mobile-menu" class="hidden origin-top absolute w-full min-h-screen animate-open-menu">
                 <nav aria-label="mobile" class="flex flex-col items-center min-h-screen py-8 bg-black bg-opacity-50 text-5xl z-10 dark:bg-white dark:bg-opacity-50 text-white dark:text-black">
-                    <a href="#hero" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Home</a>
-                    <a href="#about" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">About</a>
-                    <a href="#contact" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Contact</a>
-                    <a href="#portfolio" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Portfolio</a>  
-                    <a href="#footer" class="dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Social</a>  
+                    <a href="#hero" class="transition hover:scale-[1.2] dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Home</a>
+                    <a href="#about" class="transition hover:scale-[1.2] dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">About</a>
+                    <a href="#contact" class=" transition hover:scale-[1.2]    dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Contact</a>
+                    <a href="#portfolio" class="transition hover:scale-[1.2] dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Portfolio</a>  
+                    <a href="#footer" class="transition hover:scale-[1.2] dark:hover:text-white hover:text-black focus-within:text-white dark:focus-within:text-black active:opacity-5 w-full py-6 text-center">Social</a>  
                 </nav>
             </section>
 
             <section id="large-screen-menu" class="hidden lg:flex flex-col max-w-full h-[100vh] sticky top-0 place-content-between">
                 <nav aria-label="large menu" class="flex flex-col py-8 z-10">
-                    <a href="#hero" class="py-3 mx-auto block"><img src="./img/img logos/icons8-country-house-50.png" alt="Home" title="Home" width="50" height="50" class="block"></a>
+                    <a href="#hero" class="py-3 mx-auto block"><img src="./img/img logos/icons8-country-house-50.png" alt="Home" title="Home" width="50" height="50" class="block transition hover:scale-[1.2]"></a>
 
-                    <a href="#about" class="py-3 mx-auto block"><img src="./img/img logos/arrow-up.png" alt="About" title="About" width="512" height="512" class="w-[48px] h-auto"></a>
+                    <a href="#about" class="py-3 mx-auto block"><img src="./img/img logos/arrow-up.png" alt="About" title="About" width="512" height="512" class="w-[48px] h-auto transition hover:scale-[1.2]"></a>
 
-                    <a href="#contact" class="py-2 mx-auto block"><img src="./img/img logos/favicon.ico" alt="Contact Me" title="Contact Me" width="48" height="48" class="block"></a>
+                    <a href="#contact" class="py-2 mx-auto block"><img src="./img/img logos/favicon.ico" alt="Contact Me" title="Contact Me" width="48" height="48" class="block transition hover:scale-[1.2]"></a>
 
-                    <a href="#portfolio" class="py-3 mx-auto block"><img src="./img/img logos/favicon-32x32.png" alt="Portfolio" title="Portfolio" width="32" height="32" class="block"></a>
+                    <a href="#portfolio" class="py-3 mx-auto block"><img src="./img/img logos/favicon-32x32.png" alt="Portfolio" title="Portfolio" width="32" height="32" class="block transition hover:scale-[1.2]"></a>
 
-                    <a href="http://www.youtube.com" target="_blank"><img src="./img/img logos/vecteezy_youtube-logo-png-youtube-icon-transparent_18930572_34.png" alt="yotube-logo" title="youtube" loading="lazy"width="5000" height="5000" class="w-[100px] h-auto block mx-auto pb-3"></a>
+                    <a href="http://www.youtube.com" target="_blank"><img src="./img/img logos/vecteezy_youtube-logo-png-youtube-icon-transparent_18930572_34.png" alt="yotube-logo" title="youtube" loading="lazy"width="5000" height="5000" class="w-[100px] h-auto block mx-auto pb-3 transition hover:scale-[1.2]"></a>
 
-                    <a href="http://www.instagram.com" target="_blank"><img src="./img/img logos/5ecec78673e4440004f09e77.png"alt="instagram-logo" title="instagram" loading="lazy"width="1576" height="1576" class="w-[40px] h-auto block mx-auto pb-3"></a>
+                    <a href="http://www.instagram.com" target="_blank"><img src="./img/img logos/5ecec78673e4440004f09e77.png"alt="instagram-logo" title="instagram" loading="lazy"width="1576" height="1576" class="w-[40px] h-auto block mx-auto pb-3 transition hover:scale-[1.2]"></a>
 
-                    <a href="http://www.twitter.com" target="_blank"><img src="./img/img logos/580b57fcd9996e24bc43c53e.png"alt="twitter-logo" title="twitter" loading="lazy"width="1687" height="1687" class="w-auto h-[100px] block mx-auto pb-3"></a>
+                    <a href="http://www.twitter.com" target="_blank"><img src="./img/img logos/580b57fcd9996e24bc43c53e.png"alt="twitter-logo" title="twitter" loading="lazy"width="1687" height="1687" class="w-auto h-[100px] block mx-auto pb-3 transition hover:scale-[1.2]"></a>
 
-                    <a href="http://www.linkedin.com" target="_blank"><img src="./img/img logos/vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930585_835.png"alt="linkedin-logo" title="linkedin" loading="lazy"width="5000" height="5000" class="w-auto h-[100px] block mx-auto pt-3"></a> 
+                    <a href="http://www.linkedin.com" target="_blank"><img src="./img/img logos/vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930585_835.png"alt="linkedin-logo" title="linkedin" loading="lazy"width="5000" height="5000" class="w-auto h-[100px] block mx-auto pt-3 transition hover:scale-[1.2]"></a> 
                 </nav>
             </section>
         </header>
@@ -181,15 +181,15 @@
             </section>
           </main>
 
-        <footer id='footer' class="sticky bottom-0 bg-teal-300 dark:bg-gray-400 flex flex-col lg:hidden">
+        <footer id='footer' class="sticky bottom-0 bg-teal-300 dark:bg-gray-700 flex flex-col lg:hidden">
             <nav class="flex justify-evenly text-xl space-x-8 items-center max-w-4xl mx-auto">
-                <a href="http://www.youtube.com" target="_blank"><img src="./img/img logos/vecteezy_youtube-logo-png-youtube-icon-transparent_18930572_34.png" alt="yotube-logo" title="youtube" loading="lazy"width="5000" height="5000" class="w-[100px] h-auto block"></a>
+                <a href="http://www.youtube.com" target="_blank" class="transition hover:scale-[1.2]"><img src="./img/img logos/vecteezy_youtube-logo-png-youtube-icon-transparent_18930572_34.png" alt="yotube-logo" title="youtube" loading="lazy"width="5000" height="5000" class="w-[100px] h-auto block"></a>
 
-                <a href="http://www.instagram.com" target="_blank"><img src="./img/img logos/5ecec78673e4440004f09e77.png"alt="instagram-logo" title="instagram" loading="lazy"width="1576" height="1576" class="w-[40px] h-auto block"></a>
+                <a href="http://www.instagram.com" target="_blank" class="transition hover:scale-[1.2]"><img src="./img/img logos/5ecec78673e4440004f09e77.png"alt="instagram-logo" title="instagram" loading="lazy"width="1576" height="1576" class="w-[40px] h-auto block"></a>
 
-                <a href="http://www.twitter.com" target="_blank"><img src="./img/img logos/580b57fcd9996e24bc43c53e.png"alt="twitter-logo" title="twitter" loading="lazy"width="1687" height="1687" class="w-auto h-[48px] block"></a>
+                <a href="http://www.twitter.com" target="_blank" class="transition hover:scale-[1.2]"><img src="./img/img logos/580b57fcd9996e24bc43c53e.png"alt="twitter-logo" title="twitter" loading="lazy"width="1687" height="1687" class="w-auto h-[48px] block"></a>
 
-                <a href="http://www.linkedin.com" target="_blank"><img src="./img/img logos/vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930585_835.png"alt="linkedin-logo" title="linkedin" loading="lazy"width="5000" height="5000" class="w-auto h-[48px] block"></a>
+                <a href="http://www.linkedin.com" target="_blank" class="transition hover:scale-[1.2]"><img src="./img/img logos/vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930585_835.png"alt="linkedin-logo" title="linkedin" loading="lazy"width="5000" height="5000" class="w-auto h-[48px] block"></a>
             </nav>
         </footer>
     </body>
