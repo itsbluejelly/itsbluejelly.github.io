@@ -1400,10 +1400,11 @@ body{
 
   .dark\:dark-background{
     background-image: radial-gradient(grey, whitesmoke);
-    background-image: url('/docs/img/wallpapers/6150433.jpg');
+    /* background-image: url('/docs/img/wallpapers/6150433.jpg'); */
     background-size: cover;
     background-repeat: repeat;
     color: white;
+    color: black;
   }
 
   .dark\:focus-within\:text-black:focus-within {
@@ -1438,10 +1439,6 @@ body{
 }
 
 @media (min-width: 640px) {
-  .sm\:w-1\/2 {
-    width: 50%;
-  }
-
   .sm\:w-5\/6 {
     width: 83.333333%;
   }
@@ -1471,12 +1468,12 @@ body{
     display: none;
   }
 
-  .md\:w-5\/6 {
-    width: 83.333333%;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-5\/6 {
+    width: 83.333333%;
   }
 
   .md\:flex-row {
