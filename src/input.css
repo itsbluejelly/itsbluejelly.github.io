@@ -13,7 +13,7 @@
 @layer utilities{
     .dark-background{
         background-image: radial-gradient(grey, whitesmoke);
-        background-image: url('/build/img/wallpapers/6150433.jpg');
+        background-image: url('/docs/img/wallpapers/6150433.jpg');
         background-size: cover;
         background-repeat: repeat;
         color: white;
@@ -21,7 +21,7 @@
 
     .light-background{
         background-image: radial-gradient(skyblue, white);
-        background-image: url('/build/img/wallpapers/v856-kul-05.jpg');
+        background-image: url('/docs/img/wallpapers/v856-kul-05.jpg');
         background-size: cover;
         color: black
     }
