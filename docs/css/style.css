@@ -1400,7 +1400,7 @@ body{
 
   .dark\:dark-background{
     background-image: radial-gradient(grey, whitesmoke);
-    /* background-image: url('/docs/img/wallpapers/6150433.jpg'); */
+    background-image: url('/docs/img/wallpapers/6150433.jpg');
     background-size: cover;
     background-repeat: repeat;
     color: white;
