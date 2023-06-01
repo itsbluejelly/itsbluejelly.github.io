@@ -1398,6 +1398,11 @@ body{
     color: rgb(15 23 42 / var(--tw-text-opacity));
   }
 
+  .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
   .dark\:dark-background{
     background-image: radial-gradient(grey, whitesmoke);
     background-image: url('/docs/img/wallpapers/6150433.jpg');
@@ -1495,10 +1500,6 @@ body{
 }
 
 @media (min-width: 1024px) {
-  .lg\:left-0 {
-    left: 0px;
-  }
-
   .lg\:flex {
     display: flex;
   }
